@@ -53,6 +53,10 @@ root@ip-172-31-19-60:/home/ubuntu/deep-text-recognition-benchmark# pip install e
 root@ip-172-31-19-60:/home/ubuntu/deep-text-recognition-benchmark# cd easyocr_example
 root@ip-172-31-19-60:/home/ubuntu/deep-text-recognition-benchmark/easyocr_examples# python3
 >>>import easyocr
+
 >>>reader = easyocr.Reader(['en'], recog_network='best_accuracy')
+
 >>>result = reader.readtext('chinese.jpg')
+
 >>>reader.readtext('chinese.jpg', detail = 0)
+
